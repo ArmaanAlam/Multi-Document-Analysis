@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #050811;
+  --bg-sidebar: #04060d;
+  --bg-card: #0a0f1d;
+  --bg-card-hover: #0f172a;
+  --border-color: #1a2338;
+  --border-glow: #2563eb;
+
+  --color-primary: #3b82f6;
+  --color-secondary: #06b6d4;
+  --color-cyan: #4cd7f6;
+  --color-text-main: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-text-subtle: #64748b;
+
+  --font-headline: 'Geist', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  overflow: hidden;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.font-mono-custom {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-headline-custom {
+  font-family: 'Geist', sans-serif;
+}
+
+/* Specific Card Styling matching screenshots */
+.rag-card {
+  background: #090e1a;
+  border: 1px solid #1a243a;
+  border-radius: 12px;
+}
+
+.rag-card-active {
+  border-color: #3b82f6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+.glow-pill {
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.25);
+}
+
+/* Markdown response styling */
+.markdown-body {
+  font-size: 0.925rem;
+  line-height: 1.75;
+  color: #e2e8f0;
+}
+
+.markdown-body h3 {
+  font-family: 'Geist', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body p {
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body ol, .markdown-body ul {
+  margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.4rem;
+  color: #cbd5e1;
+}
+
+.markdown-body strong {
+  color: #ffffff;
+  font-weight: 600;
+}

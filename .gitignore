@@ -1,0 +1,33 @@
+# Python & Environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+
+# Node / Frontend
+node_modules/
+dist/
+.oxlintrc.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database & Upload Data
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/chat_history/*
+!backend/chat_history/.gitkeep
+backend/chroma_db/
+backend/users.json
+backend/documents_db.json
+chroma_db/
+
+# IDE & System
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
